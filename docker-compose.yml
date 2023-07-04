@@ -1,7 +1,7 @@
 version: "3.5"
 services:
   sese:
-    image: anzupop/sese-engine:latest
+    image: jokereven/sese-engine:latest
     # 你可能需要添加端口
     ports:
       - "80:80"
@@ -9,8 +9,8 @@ services:
     restart: unless-stopped
     environment:
       # 你可能需要更改此处的代理
-      https_proxy: http://127.0.0.1:10808
-      http_proxy: http://127.0.0.1:10808
+      https_proxy: http://172.24.144.1:7890
+      http_proxy: http://172.24.144.1:7890
     # 你可能需要更改挂载的位置
     # volumes:
-      # - "/tmp:/code/savedata"
+      # - "/tmp:/home/sese"

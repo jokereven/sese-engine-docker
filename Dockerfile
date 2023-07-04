@@ -1,5 +1,5 @@
 FROM python:3.8.13-alpine3.15
-LABEL Author "Nemo Xiong <nemo@anzupop.com>"
+LABEL Author "jokereven <zjing125.cn@gmail.com>"
 
 
 ENV PYTHONUNBUFFERED=1
